@@ -7,11 +7,13 @@ public class PlayerController : MonoBehaviour
 	public float speed;
 	private Rigidbody2D rb2d; 
 	private Animator animator;
+	private int count;
 
 
 	// Use this for initialization
 	void Start()
 	{
+		count=0; 
 		rb2d = GetComponent<Rigidbody2D>();
 		rb2d.freezeRotation = true;
 		animator = this.GetComponent<Animator>();
@@ -55,6 +57,16 @@ public class PlayerController : MonoBehaviour
 		//Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
 		rb2d.AddForce (movement * speed);
 	}
+	void OnTriggerEnter2D(Collider2D other) 
+	{
+		//Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
+		if (other.gameObject.CompareTag("PickUp")){
+			//... then set the other object we just collided with to inactive.
+			other.gameObject.SetActive(false);
+			count++ ;
+		}
+		
 
 
+}
 }
