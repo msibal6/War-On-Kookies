@@ -26,7 +26,10 @@ public class PlayerController : MonoBehaviour
 		var vertical = Input.GetAxis("Vertical");
 		var horizontal = Input.GetAxis("Horizontal");
 
-		if (vertical > 0)
+		if (vertical < 0 && horizontal < 0) {
+			animator.SetInteger("Direction", 4);
+		}
+		else if (vertical > 0)
 		{
 			animator.SetInteger("Direction", 2);
 		}
