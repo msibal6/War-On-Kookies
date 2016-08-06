@@ -5,6 +5,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 	public float speed;
+	public Text loseText;
 	private Rigidbody2D rb2d; 
 	private Animator animator;
 	private int kookieCount;
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
 		rb2d.freezeRotation = true;
 		kookieCount = 0;
 		animator = this.GetComponent<Animator>();
+		loseText.text = "";
 	}
 
 	// Update is called once per frame
@@ -26,7 +28,8 @@ public class PlayerController : MonoBehaviour
 		var vertical = Input.GetAxis("Vertical");
 		var horizontal = Input.GetAxis("Horizontal");
 
-		if (vertical < 0 && horizontal < 0) {
+		if (vertical == 0 && horizontal==0 ) 
+		{
 			animator.SetInteger("Direction", 4);
 		}
 		else if (vertical > 0)
@@ -58,7 +61,7 @@ public class PlayerController : MonoBehaviour
 		Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
 
 		//Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
-		rb2d.AddForce (movement * speed*4);
+		rb2d.AddForce (movement * speed * 4);
 	} 
 	void OnTriggerEnter2D(Collider2D other)
 	{
@@ -79,10 +82,18 @@ public class PlayerController : MonoBehaviour
 
 			}
 		}
+	
+	}
+	void OnCollisionEnter2D(Collision2D col)
+		{
+		if(col.gameObject.name=="Agent")
+			loseText.text= "You got caught by your own peers! You lose, you crooked fool!";
+
+		}
 	}
 
 
 
 
 
-}
+
