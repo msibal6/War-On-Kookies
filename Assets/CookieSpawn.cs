@@ -5,17 +5,28 @@ public class CookieSpawn : MonoBehaviour {
 	
 	public GameObject[] Cookies;
 
+
 	void Start() {
 //		Cookies = GameObject.FindGameObjectsWithTag("Cookie");
-		SetAllCookiesInvisible();
+		// Set all cookies to be invisible
+		SetAllCookiesInvisible ();
+
+		// Now set one random cookie to be visible
+		SetOneCookieVisible ();
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		// Set all cookies to be invisible
-		SetAllCookiesInvisible();
+		
+		if(other.gameObject.CompareTag("target") && PlayerController.kookieCount>0){
+			// Set all cookies to be invisible
+			SetAllCookiesInvisible ();
 
-		// Now set one random cookie to be visible
-		SetOneCookieVisible();
+			// Now set one random cookie to be visible
+			SetOneCookieVisible ();
+
+		}
+
 	}
 
 	void SetAllCookiesInvisible() {
@@ -25,7 +36,8 @@ public class CookieSpawn : MonoBehaviour {
 	}
 
 	void SetOneCookieVisible() {
-		// Generate random number in [0, 3]
+
+		// Generate random number in [0, 3]s
 		int index = Random.Range(0, Cookies.Length);
 
 		// Set the cookie at that index to be visible

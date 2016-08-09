@@ -10,7 +10,10 @@ public class CookieScript : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other) {
 		// Set this cookie to be invisible
-		SetGameObjectInvisible();
+		if (other.gameObject.CompareTag ("target")) {
+			PlayerController.kookieCount++;
+			SetGameObjectInvisible ();
+		}
 	}
 
 	void SetGameObjectInvisible() {

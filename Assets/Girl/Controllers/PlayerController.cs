@@ -4,13 +4,14 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour
-{
+	{
 	public float speed;
-	public Text loseText;
+	public Text Text;
 	private GameObject[] deliveries;
+	public GameObject[] Cookies;
 	private Rigidbody2D rb2d; 
 	private Animator animator;
-	private int kookieCount;
+	static public int kookieCount;
 
 
 	// Use this for initialization
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour
 		rb2d.freezeRotation = true;
 		kookieCount = 0;
 		animator = this.GetComponent<Animator>();
-		loseText.text = "";
+		Text.text = "";
 	}
 
 	// Update is called once per frame
@@ -74,7 +75,7 @@ public class PlayerController : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		//Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
-		if (other.gameObject.CompareTag ("PickUp")){
+		if (other.gameObject.CompareTag ("PickUp")) {
 
 			//... then set the other object we just collided with to inactive.
 			other.gameObject.SetActive (false);
@@ -83,26 +84,28 @@ public class PlayerController : MonoBehaviour
 
 		}
 		if (other.gameObject.CompareTag ("GirlScout")) {
-			if (kookieCount > 0) 
-			{
+			if (kookieCount > 0) {
 				other.gameObject.SetActive (false);
 				kookieCount--;
 
 			}
 		}
-	
-	}
+
+		}
+
 	//This controls what happens when you collide with an agent chasing you.
 	void OnCollisionEnter2D(Collision2D col)
 		{
 		if (col.gameObject.tag == "Chaser") {
-			loseText.text = "You got caught by your own peers! You lose, you crooked fool!";
+			Text.text = "You got caught by your own peers! You lose, you crooked fool!";
 			Time.timeScale = 0;
-		
+
+
+			}	
 
 		}
 
-		}
+
 	}
 
 
