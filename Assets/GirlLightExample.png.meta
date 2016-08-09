@@ -1,0 +1,295 @@
+fileFormatVersion: 2
+guid: 13c5be8b3083444b599ef5ad2947eb45
+timeCreated: 1470507626
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GirlLightExample_0
+    21300002: GirlLightExample_1
+    21300004: GirlLightExample_2
+    21300006: GirlLightExample_3
+    21300008: GirlLightExample_4
+    21300010: GirlLightExample_5
+    21300012: GirlLightExample_6
+    21300014: GirlLightExample_7
+    21300016: GirlLightExample_8
+    21300018: GirlLightExample_9
+    21300020: GirlLightExample_10
+    21300022: GirlLightExample_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: GirlLightExample_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 16}
+        - {x: -17, y: -15}
+        - {x: -15, y: -20}
+        - {x: 14, y: -20}
+        - {x: 16, y: -14}
+        - {x: 16, y: 16}
+    - name: GirlLightExample_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -17, y: 13}
+        - {x: -17, y: -16}
+        - {x: -16, y: -20}
+        - {x: 12, y: -20}
+        - {x: 16, y: -18}
+        - {x: 16, y: 8}
+        - {x: 14, y: 16}
+    - name: GirlLightExample_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 120
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 16}
+        - {x: -13, y: 16}
+        - {x: -17, y: 10}
+        - {x: -17, y: -16}
+        - {x: -12, y: -20}
+        - {x: 11, y: -20}
+        - {x: 16, y: -15}
+        - {x: 16, y: 9}
+    - name: GirlLightExample_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 17}
+        - {x: -15, y: 17}
+        - {x: -17, y: 13}
+        - {x: -17, y: -12}
+        - {x: -11, y: -20}
+        - {x: 13, y: -20}
+        - {x: 14, y: -7}
+        - {x: 14, y: 10}
+        - {x: 10, y: 15}
+    - name: GirlLightExample_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 17}
+        - {x: -17, y: 14}
+        - {x: -17, y: -11}
+        - {x: -10, y: -20}
+        - {x: 10, y: -20}
+        - {x: 14, y: -18}
+        - {x: 14, y: 17}
+    - name: GirlLightExample_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 17}
+        - {x: -17, y: 15}
+        - {x: -17, y: -12}
+        - {x: -11, y: -20}
+        - {x: 12, y: -20}
+        - {x: 14, y: -13}
+        - {x: 14, y: 13}
+        - {x: 5, y: 17}
+    - name: GirlLightExample_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -17, y: 9}
+        - {x: -17, y: -19}
+        - {x: -13, y: -20}
+        - {x: 14, y: -20}
+        - {x: 16, y: -18}
+        - {x: 16, y: 9}
+        - {x: 15, y: 16}
+    - name: GirlLightExample_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -17, y: 8}
+        - {x: -17, y: -19}
+        - {x: -15, y: -20}
+        - {x: 16, y: -20}
+        - {x: 16, y: 13}
+        - {x: 12, y: 16}
+    - name: GirlLightExample_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -17, y: 8}
+        - {x: -17, y: -16}
+        - {x: -15, y: -20}
+        - {x: 9, y: -20}
+        - {x: 16, y: -18}
+        - {x: 16, y: 8}
+        - {x: 12, y: 16}
+    - name: GirlLightExample_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 9}
+        - {x: 12, y: 15}
+        - {x: 9, y: 17}
+        - {x: -10, y: 17}
+        - {x: -17, y: 11}
+        - {x: -17, y: -9}
+        - {x: -12, y: -20}
+        - {x: 7, y: -20}
+        - {x: 13, y: -10}
+        - {x: 14, y: -4}
+    - name: GirlLightExample_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 17}
+        - {x: -17, y: 14}
+        - {x: -17, y: -11}
+        - {x: -14, y: -20}
+        - {x: 10, y: -20}
+        - {x: 14, y: -11}
+        - {x: 14, y: 16}
+        - {x: 12, y: 17}
+    - name: GirlLightExample_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 17}
+        - {x: -17, y: 16}
+        - {x: -17, y: -17}
+        - {x: -16, y: -20}
+        - {x: 11, y: -20}
+        - {x: 14, y: -16}
+        - {x: 14, y: 17}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
